@@ -1,3 +1,4 @@
+// The translation of English to Whale function.
 function getInputValue() {
   // Selecting the input element and get its value
   let inputVal = document.getElementById("englishInput").value;
@@ -7,10 +8,6 @@ function getInputValue() {
   const input = inputVal;
   const vowels = ["a", "e", "i", "o", "u"];
   const resultArray = [];
-
-  // if (input === "") {
-  //   return "You must type in the box";
-  // }
 
   for (let i = 0; i < input.length; i++) {
     // console.log('i is ' + i);
@@ -30,11 +27,16 @@ function getInputValue() {
     }
   }
 
-  const resultString = `"${resultArray.join(" ").toUpperCase()}"`;
-
-  document.getElementById("translatedText").innerHTML = resultString;
+  if (input === "") {
+    document.getElementById("translatedText").innerHTML =
+      "The whales are waiting to hear from you...";
+  } else {
+    const resultString = `"${resultArray.join(" ").toUpperCase()}"`;
+    document.getElementById("translatedText").innerHTML = resultString;
+  }
 }
 
+// The event listener to use the enter key to translate the input text
 const inputEnter = document.getElementById("englishInput");
 
 inputEnter.addEventListener("keypress", function (event) {

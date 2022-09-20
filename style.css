@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
 
 body {
-  background-color: rgb(0, 140, 220, 1);
+  background-color: rgb(0, 50, 190, 0.9);
   font-family: "Nova Round", cursive;
 }
 
@@ -17,12 +17,15 @@ h1 {
 h2 {
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 
 input {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -30,17 +33,23 @@ button {
   margin-right: auto;
   margin-left: auto;
   margin-top: 10px;
-  background-color: lightskyblue;
-  width: 90px;
+  background-color: rgba(7, 94, 224, 0.873);
+  width: fit-content;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 7px;
 }
 
 img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 70px;
+  margin-top: 55px;
+  margin-bottom: 50px;
   opacity: 90%;
   width: 300px;
+  background-blend-mode: difference;
 }
 
 p {
