@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whale Talk</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/js/whaleTalk.js" async></script>
+    <script src="/js/extra.js" async></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <h1>This is a Human to Whale language translator.</h1>
+    <h2>
+      Type in the input below to have your English text translated into Whale
+      language.
+    </h2>
+
+    <input
+      autocomplete="off"
+      type="text"
+      id="englishInput"
+      placeholder="text"
+      style="width: 300px"
+      onfocus="this.value=''"
+    />
+    <button type="button" id="translate" onclick="getInputValue()">
+      Translate
+    </button>
+    <!-- <button type="button" id="clear" onclick="clearInputValue()">Clear</button> -->
+
+    <!-- <label for="name"></label> -->
+    <!-- <input type="text" id="name" name="name" required size="10" /> -->
+    <!-- <input type="email" id="email" placeholder="email" -->
+
+    <img src="/resources/whales.gif" alt="Yin Yang Whales" />
+    <p id="translatedText">Your whale speech will appear here!</p>
+
+    <audio
+      id="whaleSounds"
+      autoplay
+      loop
+      src="/resources/pesnja-kita-whale-sounds.mp3"
+    ></audio>
+  </body>
+</html>

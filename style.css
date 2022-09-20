@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
+
+body {
+  background-color: rgb(0, 140, 220, 1);
+  font-family: "Nova Round", cursive;
+}
+
+#header {
+  margin-top: 50px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  background-color: lightskyblue;
+  width: 90px;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 70px;
+  opacity: 90%;
+  width: 300px;
+}
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 50px;
+}
